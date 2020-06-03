@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bosio's Bank</title>
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="template language" name="keywords">
+    <meta content="Tamerlan Soziev" name="author">
+    <meta content="Admin dashboard html template" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="html_admin/dist/favicon.png" rel="shortcut icon">
+    <link href="html_admin/dist/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="html_admin/dist/https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
+    <link href="html_admin/dist/bower_components/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="html_admin/dist/bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="html_admin/dist/bower_components/dropzone/dist/dropzone.css" rel="stylesheet">
+    <link href="html_admin/dist/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="html_admin/dist/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+    <link href="html_admin/dist/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="html_admin/dist/bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="html_admin/dist/css/main.css?version=4.4.0" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="libreria.js"></script>
+    <script src="prestiti.js"></script>
+</head>
+  <body class="menu-position-side menu-side-left full-screen">
+    <div class="all-wrapper solid-bg-all">
+      <!--------------------
+      START - Top Bar
+      -------------------->
+      <div class="top-bar color-scheme-bright">
+        <div class="logo-w menu-size">
+          <a class="logo" href="index.html">
+            <div><img src="html_admin/dist/img/logo.png"></img></div>
+            
+          </a>
+        </div>
+     
+        <!--------------------
+        START - Top Menu Controls
+        -------------------->
+        <div class="top-menu-controls">
+          <div class="element-search autosuggest-search-activator">
+            <input placeholder="Start typing to search..." type="text">
+          </div>
+          <!--------------------
+          START - Messages Link in secondary top menu
+          -------------------->
+         
+          <!--------------------
+          END - Messages Link in secondary top menu
+          --------------------><!--------------------
+          START - Settings Link in secondary top menu
+          -------------------->
+          <div class="top-icon top-settings os-dropdown-trigger os-dropdown-position-left">
+            <i class="os-icon os-icon-ui-46"></i>
+            <div class="os-dropdown">
+              <div class="icon-w">
+                <i class="os-icon os-icon-ui-46"></i>
+              </div>
+              <ul>
+                <li>
+                  <a href="password.html"><i class="os-icon os-icon-ui-49"></i><span>Cambia password</span></a>
+                </li>
+               
+               
+              </ul>
+            </div>
+          </div>
+          <!--------------------
+          END - Settings Link in secondary top menu
+          --------------------><!--------------------
+          START - User avatar and menu in secondary top menu
+          -------------------->
+          <div class="logged-user-w">
+            <div class="logged-user-i">
+              <div class="avatar-w">
+                <img alt="" src="html_admin/dist/img/avatar1.jpg">
+              </div>
+              <div class="logged-user-menu color-style-bright">
+                <div class="logged-user-avatar-info">
+                  <div class="avatar-w">
+                    <img alt="" >
+                  </div>
+                  <div class="logged-user-info-w">
+                    <div class="logged-user-name">
+                     Nome
+                    </div>
+                    <div class="logged-user-role">
+                      Ruolo
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-icon">
+                  <i class="os-icon os-icon-wallet-loaded"></i>
+                </div>
+                <ul>
+                  <li>
+                    <a href="profilo.html"><i class="os-icon os-icon-user-male-circle2"></i><span>Dettagli profilo</span></a>
+                  </li>
+                  <li>
+                    <a id="btnLogout"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--------------------
+          END - User avatar and menu in secondary top menu
+          -------------------->
+        </div>
+        <!--------------------
+        END - Top Menu Controls
+        -------------------->
+      </div>
+      <!--------------------
+      END - Top Bar
+      -------------------->
+      <div class="search-with-suggestions-w">
+       
+      </div>
+      <div class="layout-w">
+        <!--------------------
+        START - Mobile Menu
+        -------------------->
+      
+    
+         
+        <!--------------------
+        END - Mobile Menu
+        --------------------><!--------------------
+        START - Main Menu
+        -------------------->
+        <div class="menu-w color-scheme-light color-style-transparent menu-position-side menu-side-left menu-layout-compact sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link">
+          <div class="logged-user-w avatar-inline">
+            <div class="logged-user-i">
+              <div class="avatar-w">
+                <img alt="" src="html_admin/dist/img/avatar1.jpg">
+              </div>
+              <div class="logged-user-info-w">
+                <div class="logged-user-name">
+                  Nome
+                </div>
+                <div class="logged-user-role">
+                  Ruolo
+                </div>
+              </div>
+              <div class="logged-user-toggler-arrow">
+                <div class="os-icon os-icon-chevron-down"></div>
+              </div>
+              <div class="logged-user-menu color-style-bright">
+                <div class="logged-user-avatar-info">
+                  <div class="avatar-w">
+                    <img alt="" src="html_admin/dist/img/avatar1.jpg">
+                  </div>
+                  <div class="logged-user-info-w">
+                   
+                    <div class="logged-user-role">
+                      Cliente
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-icon">
+                  <i class="os-icon os-icon-wallet-loaded"></i>
+                </div>
+                <ul>
+                 
+                  <li>
+                    <a href="profilo.html"><i class="os-icon os-icon-user-male-circle2"></i><span>Dettagli profilo</span></a>
+                  </li>
+                 
+                  <li>
+                    <a id="btnLogout"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="element-search autosuggest-search-activator">
+            <input placeholder="Start typing to search..." type="text">
+          </div>
+          <h1 class="menu-page-header">
+            Vista
+          </h1>
+          <ul class="main-menu">
+            <li class="sub-header">
+              <span>Vista</span>
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="apps_bank.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>Dashboard</span></a>
+             
+            </li>
+            
+            <li class="sub-header">
+              <span>Movimenti</span>
+            </li>
+            <li class=" has-sub-menu">
+              <a href="apps_bank.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-package"></div>
+                </div>
+                <span>Lista Movimenti</span></a>
+              <div class="sub-menu-w">
+                <div class="sub-menu-header">
+                  Lista Movimenti
+                </div>
+                <div class="sub-menu-icon">
+                  <i class="os-icon os-icon-package"></i>
+                </div>
+                <div class="sub-menu-i">
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="lista_movimenti.html">Conti correnti</a>
+                    </li>
+                    <li>
+                      <a href="utenzeDomiciliate.html">Utenze domiciliate</a>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </li>
+           
+           
+            <li class="sub-header">
+              <span>Operazioni</span>
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="trasferimento.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>Trasferimento denaro</span></a>
+             
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="carte.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>carte</span></a>
+             
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="assegni.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>Assegni</span></a>
+             
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="investimenti.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>Investimenti</span></a>
+             
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="ricariche.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>Ricariche telefoniche</span></a>
+             
+            </li>
+            <li class="sub-header">
+              <span>cliente</span>
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="beneficiari.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>beneficiari</span></a>
+             
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="prestiti.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>prestiti</span></a>
+             
+            </li>
+           
+           
+        </div>
+        <!--------------------
+        END - Main Menu
+        -------------------->
+     
+              <!--END - Transactions Table--><!--------------------
+              START - Color Scheme Toggler
+              -------------------->
+           
+              <!--------------------
+              END - Color Scheme Toggler
+              --------------------><!--------------------
+              START - Demo Customizer
+              -------------------->
+             
+              <!--------------------
+              END - Demo Customizer
+              --------------------><!--------------------
+              START - Chat Popup Box
+              -------------------->
+           
+              <!--------------------
+              END - Chat Popup Box
+              -------------------->
+              <div class="content-i col-10">
+                <div class="content-box">
+      <h2 class="element-header">
+       PRESTITI E FINANZIAMENTI
+      </h2>
+
+      <div class="element-box">
+        <div class="element-actions">
+         
+
+        <div aria-hidden="true" class="onboarding-modal modal fade animated" id="infoPrestiti" role="dialog" tabindex="-1">
+          <div class="modal-dialog modal-centered" role="document">
+            <div class="modal-content text-center">
+              <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="close-label">Chiudi</span><span class="os-icon os-icon-close"></span></button>
+             
+              <div class="onboarding-content with-gradient">
+                <h4 class="onboarding-title">
+                 Informazioni Finanziamento
+                </h4>
+               
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">Importo (€)</label><input class="form-control"  id="txtImporto" readonly="readonly" type="text" value="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">Tipo di finanziamento</label><input class="form-control" id="txtFinanz" readonly="readonly" type="text" value="">
+                         
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">Mensilità</label><input class="form-control" id="txtMen" placeholder="mensilità" readonly="readonly" type="text" value="">
+                        
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">Importo mensilità</label><input class="form-control" id="txtImportoMen" readonly="readonly" type="text" value="">
+                         
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">Data emissione</label><input class="form-control" id="txtDataE" readonly="readonly" type="text" value="">
+                        
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">Data termine</label><input class="form-control"  id="txtDataT" readonly="readonly" type="text" value="">
+                         
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">Tasso di Interesse </label><input class="form-control" id="txtTasso" readonly="readonly" type="text" value="">
+                        
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">ImportoRestituito</label><input class="form-control"  id="txtVersamento" readonly="readonly" type="text" value="">
+                         
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+    
+    
+      
+        <!--------------------
+        START - Controls Above Table
+        -------------------->
+        <div class="controls-above-table">
+          <h4 class="element-header">
+           Riepilogo Fianziamenti e prestiti
+          </h4>
+          <div class="row">
+           
+            <div class="col-sm-6">
+              <form class="form-inline ">
+               
+                <input class="form-control form-control-sm rounded bright" placeholder="Search" type="text">
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--------------------
+        END - Controls Above Table
+        -------------------->
+        <div class="table-responsive">
+          <!--------------------
+          START - Basic Table
+          -------------------->
+          <table class="table table-lightborder">
+            <thead>
+                <tr>
+                    <th class="text-center">
+                        Tipo finanziamento
+                    </th>
+                    <th class="text-center">
+                        Importo
+                    </th>
+                    <th class="text-center">
+                        Numero mensilità
+                    </th>
+                    <th class="text-center">
+                        Rata
+                    </th>
+                    <th class="text-center">
+                        Stato
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody id="tabPrestiti">
+             
+            </tbody>
+          </table>
+          <!--------------------
+          END - Basic Table
+          -------------------->
+        </div>
+    
+        
+      </div>
+    </div>
+  </iv>
+</div>
+
+    
+   
+        
+                <!--------------------
+                END - Sidebar
+                -------------------->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display-type"></div>
+    </div>
+    <script src="html_admin/dist/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="html_admin/dist/bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="html_admin/dist/bower_components/moment/moment.js"></script>
+    <script src="html_admin/dist/bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="html_admin/dist/bower_components/select2/dist/js/select2.full.min.js"></script>
+    <script src="html_admin/dist/bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script src="html_admin/dist/bower_components/ckeditor/ckeditor.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap-validator/dist/validator.min.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="html_admin/dist/bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <script src="html_admin/dist/bower_components/dropzone/dist/dropzone.js"></script>
+    <script src="html_admin/dist/bower_components/editable-table/mindmup-editabletable.js"></script>
+    <script src="html_admin/dist/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="html_admin/dist/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="html_admin/dist/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="html_admin/dist/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="html_admin/dist/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="html_admin/dist/bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="html_admin/dist/bower_components/bootstrap/js/dist/popover.js"></script>
+    <script src="html_admin/dist/js/demo_customizer.js?version=4.4.0"></script>
+    <script src="html_admin/dist/js/main.js?version=4.4.0"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-XXXXXXX-9', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
